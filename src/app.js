@@ -46,17 +46,6 @@ export class App {
       title: 'Date Selector',
     };
 
-    // use custom element
-    var customElementRoute = {
-      route: 'custom-element',
-      moduleId: './routes/custom-element/hello-world',
-      name: 'hello-world',
-      nav: true,
-      settings: {
-        roles: [],
-      },
-      title: 'Custom Elements',
-    };
 
     // use custom element
     var secretMessageRoute = {
@@ -70,13 +59,26 @@ export class App {
       title: 'Secret-Message',
     };
 
+    // tabs route element
+    var tabsRoute = {
+      route: 'tabs',
+      moduleId: './routes/tabs/tab-example',
+      name: 'tab-example',
+      nav: true,
+      settings: {
+        roles: [],
+      },
+      title: 'jQuery Tabs',
+    };
+
     // In order for Aurelia to navigate to the different routes, you add them here
     config.map([
       nullRoute,
       homeRoute,
       calendarRoute,
       customElementRoute,
-      secretMessageRoute
+      secretMessageRoute,
+      tabsRoute
     ]);
 
     // send all unknown routes to home page
