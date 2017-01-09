@@ -3,7 +3,7 @@ import $ from 'jquery';
 import {datepicker} from 'jquery-ui';
 
 
-@customElement('jqueryDatepicker')
+@customElement('jquery-datepicker')
 export class Calendar {
 
   static inject() {
@@ -12,11 +12,14 @@ export class Calendar {
 
   constructor(element) {
     this.element = element;
-    console.log('ELEMENT', element);
+
+    this.id = 'myID';
+
+    console.log(this.element);
   };
 
   attached() {
-    $('#myID').datepicker(this.options)
+    $(`#${this.id}`).datepicker()
       .on('change', e => {
         let changeEvent = new CustomEvent('input', {
           detail: {
@@ -30,7 +33,7 @@ export class Calendar {
   }
 
   detached() {
-    $('#myID').datepicker('destroy').off('change');
+    $(`#${this.id}`).datepicker('destroy').off('change');
   }
 
 }
