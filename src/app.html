@@ -1,0 +1,17 @@
+<template>
+  <require from="css/styles.css"></require>
+
+  <div class="w3-container">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" click.delegate="closeNav()">&times;</a>
+      <a href="#/calendar">Air Datepicker</a>
+      <a href="#/home">Home</a>
+    </div>
+
+    <div id="main">
+      <!-- close menu section-->
+      <span style="font-size:30px;cursor:pointer" click.delegate="openNav()">&#9776; open</span>
+      <router-view></router-view>
+    </div>
+  </div>
+</template>
