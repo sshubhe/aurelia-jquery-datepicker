@@ -3,14 +3,11 @@
 
   <div class="w3-row">
     <div class="w3-col m4 l3">
-      <jquery-datepicker id="myID"></jquery-datepicker>
-    </div>
-  </div>
-
-  <div class="w3-row">
-    <div class="w3-col m4 l3">
-      DATE SELECTED:
-      <span>${dateSelected}</span>
+      <jquery-datepicker
+        id.bind="datepickerID"
+        options.bind="{}"
+        name.bind="datepickerName">
+      </jquery-datepicker>
     </div>
   </div>
 </template>

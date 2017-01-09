@@ -49,8 +49,8 @@ export class App {
     // use custom element
     var customElementRoute = {
       route: 'custom-element',
-      moduleId: './routes/custom-element/custom-element',
-      name: 'custom-element',
+      moduleId: './routes/custom-element/hello-world',
+      name: 'hello-world',
       nav: true,
       settings: {
         roles: [],

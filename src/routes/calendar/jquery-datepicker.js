@@ -6,6 +6,10 @@ import {datepicker} from 'jquery-ui';
 @customElement('jquery-datepicker')
 export class JqueryDatepicker {
 
+  @bindable id = '';
+  @bindable name = '';
+  @bindable options = {};
+
   static inject() {
     return [Element];
   }
