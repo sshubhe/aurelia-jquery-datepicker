@@ -76,7 +76,6 @@ export class App {
       nullRoute,
       homeRoute,
       calendarRoute,
-      customElementRoute,
       secretMessageRoute,
       tabsRoute
     ]);
