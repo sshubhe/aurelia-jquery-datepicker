@@ -34,7 +34,7 @@ export class App {
       title: 'Home'
     };
 
-    // use air-datepicker
+    // use jquery-datepicker
     var calendarRoute = {
       route: 'calendar',
       moduleId: './routes/calendar/calendar',
@@ -46,12 +46,25 @@ export class App {
       title: 'Air Date Selector',
     };
 
+    // use custom element
+    var customElementRoute = {
+      route: 'custom-element',
+      moduleId: './routes/custom-element/custom-element',
+      name: 'custom-element',
+      nav: true,
+      settings: {
+        roles: [],
+      },
+      title: 'Custom Elements',
+    };
+
 
     // In order for Aurelia to navigate to the different routes, you add them here
     config.map([
       nullRoute,
       homeRoute,
-      calendarRoute
+      calendarRoute,
+      customElementRoute
     ]);
 
     // send all unknown routes to home page
