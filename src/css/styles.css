@@ -1,6 +1,5 @@
 /* import w3.css into here so it's faster*/
 @import url("src/css/w3.css");
-@import url("node_modules/air-datepicker/dist/css/datepicker.css");
 
 /* BEGIN SIDE BAR NAV SECTION */
 .sidenav {
