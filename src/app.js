@@ -43,7 +43,7 @@ export class App {
       settings: {
         roles: [],
       },
-      title: 'Air Date Selector',
+      title: 'Date Selector',
     };
 
     // use custom element
@@ -58,13 +58,25 @@ export class App {
       title: 'Custom Elements',
     };
 
+    // use custom element
+    var secretMessageRoute = {
+      route: 'secret-message',
+      moduleId: './routes/secret-message/secret-message-index',
+      name: 'secret-message',
+      nav: true,
+      settings: {
+        roles: [],
+      },
+      title: 'Secret-Message',
+    };
 
     // In order for Aurelia to navigate to the different routes, you add them here
     config.map([
       nullRoute,
       homeRoute,
       calendarRoute,
-      customElementRoute
+      customElementRoute,
+      secretMessageRoute
     ]);
 
     // send all unknown routes to home page

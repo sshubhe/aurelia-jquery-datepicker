@@ -16,19 +16,12 @@ export class JqueryDatepicker {
 
   constructor(element) {
     this.element = element;
-
-    console.log(this.element);
-
-    if (!this.id && this.name) {
-      this.id = this.name;
-    }
-
-    if (!this.name && this.id) {
-      this.name = this.id;
-    }
+    console.log('ELEMENT', this.element);
   };
 
   attached() {
+    console.log(`id is ${this.id}`);
+
     $(`#${this.id}`).datepicker()
       .on('change', e => {
         let changeEvent = new CustomEvent('input', {

@@ -1,13 +1,18 @@
 <template>
-  <require from="./jquery-datepicker.html"></require>
+  <require from="./jquery-datepicker"></require>
 
   <div class="w3-row">
     <div class="w3-col m4 l3">
-      <jquery-datepicker
-        id.bind="datepickerID"
-        options.bind="{}"
-        name.bind="datepickerName">
-      </jquery-datepicker>
+      <jquery-datepicker id="datepickerID"></jquery-datepicker>
+    </div>
+  </div>
+
+
+  <div class="w3-row">
+    <div class="w3-col m4 l3">
+      <p>
+        Date Selected: ${dateSelected}
+      </p>
     </div>
   </div>
 </template>
