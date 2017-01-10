@@ -9,11 +9,6 @@
     <div class="w3-col m4 l3">
       <!--<input type="text" id="datepicker" click.delegate="openDatepicker()"/>-->
       <input datepicker value.bind="dateSelected">
-      <script>
-        $( function() {
-          $( "#datepicker" ).datepicker();
-        } );
-      </script>
       <br>
       <br>
       <button click.delegate="submitDateToServer()">Send to Server</button>
