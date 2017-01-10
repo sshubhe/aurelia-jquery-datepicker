@@ -1,12 +1,24 @@
 <template>
-  <require from="./jquery-datepicker"></require>
+  <require from="./datepicker"></require>
+
+  <link rel="stylesheet" type="text/css" href="node_modules/jquery-ui/themes/base/datepicker.css">
+  <link rel="stylesheet" type="text/css" href="node_modules/jquery-ui/themes/base/theme.css">
+
 
   <div class="w3-row">
     <div class="w3-col m4 l3">
-      <jquery-datepicker id="datepickerID"></jquery-datepicker>
+      <!--<input type="text" id="datepicker" click.delegate="openDatepicker()"/>-->
+      <input datepicker value.bind="dateSelected">
+      <script>
+        $( function() {
+          $( "#datepicker" ).datepicker();
+        } );
+      </script>
+      <br>
+      <br>
+      <button click.delegate="submitDateToServer()">Send to Server</button>
     </div>
   </div>
-
 
   <div class="w3-row">
     <div class="w3-col m4 l3">
@@ -15,4 +27,5 @@
       </p>
     </div>
   </div>
+
 </template>

@@ -116,7 +116,6 @@
           "aurelia-templating",
           "aurelia-templating-binding",
           "jquery",
-          "jquery-ui",
           "text",
           {
             "name": "aurelia-templating-resources",
@@ -133,6 +132,17 @@
             "path": "../node_modules/aurelia-testing/dist/amd",
             "main": "aurelia-testing",
             "env": "dev"
+          },
+          {
+            "name": "jquery-ui-datepicker",
+            "path": "../node_modules/jquery-ui/",
+            "main": "ui/widgets/datepicker",
+            "dep": ["jquery"],
+            "exports": "$",
+            "resources": [
+              "themes/base/datepicker.css",
+              "themes/base/theme.css"
+            ]
           }
         ]
       }
