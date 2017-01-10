@@ -135,8 +135,10 @@
           },
           {
             "name": "jquery-ui",
-            "path": "../node_modules/jquery-ui/ui",
-            "main": "widget"
+            "path": "../node_modules/jquery-ui",
+            "main": "jquery-ui",
+            "deps": ["jquery"],
+            "exports": "$"
           }
         ]
       }
