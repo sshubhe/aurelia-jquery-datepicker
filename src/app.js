@@ -83,7 +83,6 @@ export class App {
       nullRoute,
       homeRoute,
       calendarRoute,
-      secretMessageRoute,
       html5DatepickerRoute
     ]);
 
