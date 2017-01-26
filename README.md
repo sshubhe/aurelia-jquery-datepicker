@@ -7,7 +7,7 @@ The Aurelia CLI app must be intalled to run these examples. You can install it w
 After cloning the repo you can run the app using these commands
 
     npm install
-	  au run --watch
+    au run --watch
 
 There are 2 links to demonstrate datepickers.
 
