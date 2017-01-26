@@ -11,6 +11,7 @@ After cloning the repo you can run the app using these commands
 
 There are 2 links to demonstrate datepickers.
 
+#### jQuery Integration Explained
 The following lines in _aurelia/aurelia.json_ are what adds the jQuery 
 components to our web application
 
