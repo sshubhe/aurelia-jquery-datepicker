@@ -71,13 +71,20 @@ export class App {
       title: 'jQuery Tabs',
     };
 
+    var html5DatepickerRoute = {
+      route: 'html-datepicker',
+      moduleId: './routes/html-datepicker/html-datepicker',
+      name: 'html-datepicker',
+      title: 'HTML5 Datepicker',
+    };
+
     // In order for Aurelia to navigate to the different routes, you add them here
     config.map([
       nullRoute,
       homeRoute,
       calendarRoute,
       secretMessageRoute,
-      tabsRoute
+      html5DatepickerRoute
     ]);
 
     // send all unknown routes to home page
